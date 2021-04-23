@@ -1,6 +1,7 @@
 package me.mandos.maha.controller
 
 import me.mandos.maha.controller.dto.CheckoutResponse
+import me.mandos.maha.service.WatchService
 import org.slf4j.LoggerFactory
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping(path = ["/checkout"])
-class CheckoutController() {
+class CheckoutController(private val watchService: WatchService) {
 
     private val log = LoggerFactory.getLogger(javaClass)
 
