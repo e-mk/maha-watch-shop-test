@@ -10,7 +10,5 @@ interface WatchService {
 
     fun getById(id: String): Watch
 
-    fun update(watch: Watch): Watch
-
     fun delete(id: String): Watch
 }
