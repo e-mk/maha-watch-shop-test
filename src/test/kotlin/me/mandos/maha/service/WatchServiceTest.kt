@@ -1,8 +1,8 @@
-package me.mandos.maha
+package me.mandos.maha.service
 
+import me.mandos.maha.MahaWatchShopApplication
 import me.mandos.maha.model.Discount
 import me.mandos.maha.model.Watch
-import me.mandos.maha.service.WatchService
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
