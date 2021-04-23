@@ -6,5 +6,5 @@
 2. Send POST request to http://localhost:8080/checkout with strings array body.
    * Example: 
    > ["001", "002", "001", "004", "003"]
-3. You will se calculated price as a response.
+3. You will see calculated price as a response.
 
