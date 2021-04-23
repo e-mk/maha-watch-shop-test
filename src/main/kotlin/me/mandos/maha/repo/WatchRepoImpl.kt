@@ -16,14 +16,14 @@ class WatchRepoImpl: WatchRepo {
 
     override fun findById(id: String): Watch {
         if (!watchDb.containsKey(id)) {
-            throw WatchNotFoundException("Couldn't find watch with given ID")
+            throw WatchNotFoundException("Couldn't find watch with given ID : $id")
         }
         return watchDb[id]!!
     }
 
     override fun delete(id: String): Watch {
         if (!watchDb.containsKey(id)) {
-            throw WatchNotFoundException("Couldn't delete watch with given ID")
+            throw WatchNotFoundException("Couldn't delete watch with given ID : $id")
         }
         return watchDb.remove(id)!!
     }
